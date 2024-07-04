@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: "border-box";
+}
+
+body {
+  margin-left: 30px;
+  background-color: rgb(250, 246, 192);
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 15px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.bullet {
+  margin-top: 10px;
+}
+
+.image-id {
+  margin-top: 20px;
+  width: 500px;
+  height: 250px;
+  border: 2px solid #000000;
+}

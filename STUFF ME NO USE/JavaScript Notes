@@ -1,0 +1,197 @@
+// Assign a value to a variable
+
+// let (variable name) = (the value you want to assign to the variable);
+// examples:
+let js = "I am very cool";
+let something = 96;
+// (so here we declared a variable something and js and assigned it to there respective value)
+
+// Logging things to the console
+
+// (Is basicaly the print of JavaScript)
+// console.log((the info you want to basicaly print on the console of the web page));
+// examples:
+console.log("Whats good, nerd");
+console.log(107);
+
+// Using both of there new thigns we can do
+// example:
+
+let hisName = "Shreyansh";
+let hisAge = 14;
+console.log(hisName);
+console.log("His age is");
+console.log(hisAge);
+
+// Convention of naming variables
+/_
+camalCase, this the convention that is mostly used for JavaScript and it look something like this:
+examples:
+myJob,
+myName,
+myFirstJob
+_/
+// As you can see it started with a lower case letter and for the next letter in the variable is capitalized
+// You don't need to do this but is good practice, for example in real world people say thanks, sorry etc but it is not really needed, its just a good practice
+
+// The only charecters that can be used when naming a variable are all the alphabets, number, $, \_
+// A variable can't be started with a number
+// And finnaly it is a good practice if your variable names are descriptive, which helps you better understand the value of the variable
+
+// Value
+// A value can only be a Object which looks something like this:
+
+let me = {
+name: "Shreyansh"
+};
+
+// And everthing else is a Primitive which looks something like this:
+let myName = "Shreyansh";
+let myAge = 30;
+
+// Primitive Data Types
+
+// There are 7 Primitive Data Types
+
+// 1. Number: Floating point numbers. Used for decimals and integers
+// example:
+let randomNumber = 21;
+
+// 2. String: of charecters. Used for test
+// example:
+let exampleName = "Shreyansh";
+// (They have to be in single quotes or double quotes)
+
+// 3. Boolean: Logical type that can only be true or false. Used for taking decisions
+// example:
+let nightTime = true;
+// console.log(nightTime)
+
+// 4. Undefined: Value taken by a variable that is not yet defined ("empty value")
+// example:
+let sirName;
+console.log(sirName);
+// This will return undefined in the console
+
+// (No value is assigned to the Variable)
+
+// 5. Null: Also means "empty value"
+// (Used in different circumstances)
+
+// 6. Symbol: Value that is unique and cannot be changed
+
+// 7. BigInt: Larger integers than the Number type can't hold
+
+// typeof is a operator, and it tells the data type
+// example:
+console.log(typeof true);
+// console.log(typeof (we can also use a variable here and the typeof tells us the data type of the value of the provided variable));
+console.log(typeof 24);
+console.log(typeof "this is a string value");
+
+// there is a bug in JavaScript when you check the data type of Null
+// example:
+console.log(typeof null)
+
+// null is a datatype but this returns object when it is logged to the console
+// this is a bug and is not an indented function
+
+// Comments
+
+// A comment is something that is ignored and is not going to be exicuted, like deactivating a code so that the program doesn't run it
+
+// Syntax of a comment:
+// this is for one line
+// you can use
+/_
+when you
+want
+to comment multiple
+lines of code
+and this is called
+muti-line comment
+_/
+
+// Dynamic typing
+// JavaScript has dynamic typing: We do not have to manuallu define the data type of the value stored in a variable. Instead, data types are determined automatically.
+// example:
+let javaScriptIsFun = true;
+// we declared a variable named javaScriptIsFun, and its value is a Boolean
+
+// to change the data type or to modify the value we can do this:
+javaScriptIsFun = "Yes!";
+// Notice that we don't need to put let now because the variable is already declared
+
+// let, const amd var
+
+// let allows you to declare a variable with a value and it is fine if you change the value of that variable later on in the program
+// This in other terms is called "reassigning" or you may here people say "we mutated the variable age"
+// example:
+let age = 30;
+age = 31;
+
+// On the other hand a variable declared by const can't be changed and if tried so will give out a TypeError
+// example:
+const birthYear = 2000;
+// if we do this:
+birthYear = 1999;
+// This will give a error
+// It is also very important to use const if your not going to change the value of the variable
+
+// var is the old way of declaring variables and should be avoided, it is basicaly let, but it is very different in the servers
+// example:
+var job = "programmer";
+job = "teacher";
+// And var also lets us change the variable's value too
+
+// Operator
+
+// Arithmetic operations include multiplication (*), addition (+), subtraction (-), division (/), exponent (\*\*)
+// example:
+const addingExample = 100+24;
+const subtractionExample = 100-24;
+const multiplicationExample = 100*24
+const divisionExample = 100/24
+const powerExample = 100\*\*24
+
+// We can also use the plus operator to join strings
+// example:
+const firstName = "Shreyansh";
+const lastName = "Vennamaneni";
+console.log(firstName + " " + lastName)
+// This will show "Shreyansh Vennamaneni" in the console
+// The " " in the middle of the console log is important because it gives a space between the two words
+
+// Assigment Operator
+// The equal sign is an assigment operator.
+// example:
+let x = 10 + 14; // x is 24
+x -= 14; // x = x -14 = 10
+x \*= 4; // x = x \_ 4 = 16
+x++; // x = x + 1 = 17
+x--; // x = x - 1 = 16
+x /= 4; // x = x / 4 = 4
+console.log(x);
+
+// Comparison operators
+// The result of a Comparison operator return a Boolean value (true or false)
+// example:
+const ageTom = 10;
+console.log(ageTom > 11);
+
+// This will return false
+// All the Comparison operators are >, <, >=, <=, ==
+
+// we can store the result of a Comparison in a variable which is more useful
+// example:
+const isTom11 = ageTom > 11;
+
+// Operator Precedence
+
+// example:
+const now = 2024;
+const ageTim = now - 2000;
+const ageSam = now - 2004;
+console.log(now - 2000 > now - 2004)
+
+// So here "now - 2000 > now - 2004" instead of going from left to right JavaScript has a proper order to do things like this so if it went form left to right it would be false because lets see it "now - 2000" is going to be 24 and if it checks that to now it is not bigger than 2024 so it would be false but it doesn't do that and returns two by doing thr subtractions first.

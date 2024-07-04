@@ -1,0 +1,59 @@
+/* Select All */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(254, 242, 166);
+  font-family: Arial;
+  font-size: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+h1 {
+  font-size: 44px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Select Class */
+.paragraph {
+  color: #3a3200;
+  margin-bottom: 10px;
+}
+
+/* Select ID */
+#your-name {
+  width: 500px;
+  background-color: rgb(248, 229, 86);
+  border: 5px solid #444;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#course-image {
+  width: 500px;
+}
+
+/* Selecting both and having the same settings to both */
+input,
+button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Says that every h2 in the id your-name is going to be selected */
+#your-name h2 {
+  color: rgb(116, 86, 8);
+}
